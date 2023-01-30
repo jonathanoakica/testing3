@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>testing &mdash; testing  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changelog" href="changelog.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> testing
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">testing</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>testing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="testing">
+<h1>testing<a class="headerlink" href="#testing" title="Permalink to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="technologies">
+<h2>Technologies<a class="headerlink" href="#technologies" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="repository-structure">
+<h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Permalink to this heading">¶</a></h2>
+<hr class="docutils" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+├── Makefile           &lt;- Makefile with commands like `make environemnt` or `make requirements`
+├── README.md          &lt;- The top-level README for developers using this project.
+├── custom_libraries   &lt;- Customized code and scripts
+├── data
+│   ├── external       &lt;- Data from third party sources.
+│   ├── processed      &lt;- The final, canonical data sets for modeling.
+│   └── raw            &lt;- The original, immutable data dump.
+│
+├── docs               &lt;- A default Sphinx project; see sphinx-doc.org for details
+│
+├── models             &lt;- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          &lt;- Jupyter notebooks. Naming convention is a number (for ordering),
+│                         the creator&#39;s initials, and a short `-` delimited description, e.g.
+│                         `1.0-jqp-initial-data-exploration`.
+│
+├── references         &lt;- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports            &lt;- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures        &lt;- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   &lt;- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze &gt; requirements.txt`
+│
+├── setup.py           &lt;- makes project pip installable (pip install -e .) so src can be imported
+├── src                &lt;- Source code for use in this project.
+│   ├── __init__.py    &lt;- Makes src a Python module
+│   │
+│   ├── data           &lt;- Scripts to download or generate data
+│   │   └── make_dataset.py
+│   │
+│   ├── features       &lt;- Scripts to turn raw data into features for modeling
+│   │   └── build_features.py
+│   │
+│   ├── models         &lt;- Scripts to train models and then use trained models to make
+│   │   │                 predictions
+│   │   ├── predict_model.py
+│   │   └── train_model.py
+│   │
+│   └── visualization  &lt;- Scripts to create exploratory and results oriented visualizations
+│       └── visualize.py
+
+</pre></div>
+</div>
+</section>
+<section id="version">
+<h2>Version<a class="headerlink" href="#version" title="Permalink to this heading">¶</a></h2>
+<p>0.1.0</p>
+</section>
+<section id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this heading">¶</a></h2>
+<p>jon</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-1-0-30-01-2023">v0.1.0 (30/01/2023)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#types-of-contributions">Types of Contributions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#report-bugs">Report Bugs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#fix-bugs">Fix Bugs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#implement-features">Implement Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#write-documentation">Write Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#submit-feedback">Submit Feedback</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#get-started">Get Started!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#code-of-conduct">Code of Conduct</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Code of Conduct</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conduct.html#our-pledge">Our Pledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct.html#our-standards">Our Standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct.html#our-responsibilities">Our Responsibilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct.html#scope">Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct.html#enforcement">Enforcement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conduct.html#attribution">Attribution</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/src/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/src/index.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/src/data/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.data</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/src/data/index.html#submodules">Submodules</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.data.make_dataset</span></code></a><ul>
+<li class="toctree-l7"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#module-contents">Module Contents</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#functions">Functions</a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#attributes">Attributes</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#src.data.make_dataset.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#src.data.make_dataset.log_fmt"><code class="docutils literal notranslate"><span class="pre">log_fmt</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#src.data.make_dataset.main">main</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/data/make_dataset/index.html#src.data.make_dataset.log_fmt">log_fmt</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/src/features/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.features</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/src/features/index.html#submodules">Submodules</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/src/features/build_features/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.features.build_features</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/src/models/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/src/models/index.html#submodules">Submodules</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/src/models/predict_model/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.predict_model</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/src/models/train_model/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.models.train_model</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/src/scripts/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.scripts</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/src/scripts/index.html#submodules">Submodules</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.scripts.calcbas</span></code></a><ul>
+<li class="toctree-l7"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#module-contents">Module Contents</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#functions">Functions</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.clean_text"><code class="docutils literal notranslate"><span class="pre">clean_text()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_a"><code class="docutils literal notranslate"><span class="pre">find_a()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_b"><code class="docutils literal notranslate"><span class="pre">find_b()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_c"><code class="docutils literal notranslate"><span class="pre">find_c()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_delta"><code class="docutils literal notranslate"><span class="pre">find_delta()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_roots"><code class="docutils literal notranslate"><span class="pre">find_roots()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.calcbhaskara"><code class="docutils literal notranslate"><span class="pre">calcbhaskara()</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.clean_text">clean_text</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_a">find_a</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_b">find_b</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_c">find_c</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_delta">find_delta</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.find_roots">find_roots</a></li>
+<li class="toctree-l9"><a class="reference internal" href="autoapi/src/scripts/calcbas/index.html#src.scripts.calcbas.calcbhaskara">calcbhaskara</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/src/visualization/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.visualization</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/src/visualization/index.html#submodules">Submodules</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/src/visualization/visualize/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src.visualization.visualize</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">calcbas-checkpoint</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#module-contents">Module Contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.clean_text"><code class="docutils literal notranslate"><span class="pre">clean_text()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_a"><code class="docutils literal notranslate"><span class="pre">find_a()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_b"><code class="docutils literal notranslate"><span class="pre">find_b()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_c"><code class="docutils literal notranslate"><span class="pre">find_c()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_delta"><code class="docutils literal notranslate"><span class="pre">find_delta()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_roots"><code class="docutils literal notranslate"><span class="pre">find_roots()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.calcbhaskara"><code class="docutils literal notranslate"><span class="pre">calcbhaskara()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.clean_text">clean_text</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_a">find_a</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_b">find_b</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_c">find_c</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_delta">find_delta</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.find_roots">find_roots</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/calcbascheckpoint/index.html#calcbas-checkpoint.calcbhaskara">calcbhaskara</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright .
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

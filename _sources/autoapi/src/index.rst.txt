@@ -1,0 +1,19 @@
+:py:mod:`src`
+=============
+
+.. py:module:: src
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   data/index.rst
+   features/index.rst
+   models/index.rst
+   scripts/index.rst
+   visualization/index.rst
+
+

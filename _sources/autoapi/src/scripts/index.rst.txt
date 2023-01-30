@@ -1,0 +1,15 @@
+:py:mod:`src.scripts`
+=====================
+
+.. py:module:: src.scripts
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   calcbas/index.rst
+
+

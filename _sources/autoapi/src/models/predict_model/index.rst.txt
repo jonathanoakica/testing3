@@ -1,0 +1,6 @@
+:py:mod:`src.models.predict_model`
+==================================
+
+.. py:module:: src.models.predict_model
+
+

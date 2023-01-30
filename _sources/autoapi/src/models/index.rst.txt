@@ -1,0 +1,16 @@
+:py:mod:`src.models`
+====================
+
+.. py:module:: src.models
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   predict_model/index.rst
+   train_model/index.rst
+
+
